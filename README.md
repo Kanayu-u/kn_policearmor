@@ -1,6 +1,6 @@
 # kn_policearmor
 
-[![Version](https://img.shields.io/badge/version-1.1.0-blue.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-1.2.0-blue.svg)](CHANGELOG.md)
 [![Framework](https://img.shields.io/badge/framework-QBCore%20%7C%20QBox%20%7C%20ESX-green.svg)](#requirements)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](LICENSE)
 
@@ -42,6 +42,8 @@ ensure kn_policearmor
 | `Config.Jobs` | `police`, `leo` | Jobs allowed to receive armor |
 | `Config.Vehicles` | vanilla police vehicles | Spawn names that trigger the effect |
 | `Config.Sound` | `Pick_Up_Armor` | Sound played on the client when armor is applied |
+| `Config.Notify` | `kn`, `top-right`, `4000` | Notification when armor is applied. `Style`: `'kn'` (built-in) / `'ox'` (ox_lib), `Position`, `Duration` (ms) |
+| `Config.Text` | English | Notification text (`%d` = armor amount) |
 | `Config.Debug` | `false` | Debug output |
 
 > `Config.Jobs` の既定値は `police` / `leo` です。**QBCore / QBox / ESX はいずれも

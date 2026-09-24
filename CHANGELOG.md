@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.2.0] - 2026-09-24
+
+### Added
+- **アーマー付与時に通知を表示。** 従来は効果音のみで、付与されたことが分かりにくかった。
+  通知は同梱の画面で表示し、`Config.Notify.Style = 'ox'` で ox_lib の通知にも切り替えられる。
+- `Config.Notify`（`Style` / `Position` / `Duration`）と `Config.Text`（通知の文言）。
+
+### Changed
+- サーバーからクライアントへのイベント `kn_policearmor:playSound` に付与量を渡すようにした。
+
 ## [1.1.0] - 2026-08-28
 
 GitHub 公開に向けた整備。

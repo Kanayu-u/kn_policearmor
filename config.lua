@@ -29,3 +29,20 @@ Config.Sound = {
     name = 'Pick_Up_Armor',
     dict = 'HUD_FRONTEND_DEFAULT_SOUNDSET'
 }
+
+-- Notification shown when armor is equipped
+--   Style    : 'kn' = built-in notification (default) / 'ox' = ox_lib notification
+--              Use 'ox' if you want it to match your other scripts
+--   Position : 'top-right' / 'top-left' / 'top-center' / 'bottom-right' / 'bottom-left'
+--   Duration : display time in milliseconds
+Config.Notify = {
+    Style    = 'kn',
+    Position = 'top-right',
+    Duration = 4000,
+}
+
+-- Notification text (%d = armor amount)
+Config.Text = {
+    Title    = 'Police Armor',
+    Equipped = 'Armor equipped (%d)',
+}

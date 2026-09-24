@@ -1,8 +1,9 @@
 
 
 -- Function to play sound
-RegisterNetEvent('kn_policearmor:playSound', function()
+RegisterNetEvent('kn_policearmor:playSound', function(amount)
     PlaySoundFrontend(-1, Config.Sound.name, Config.Sound.dict, true)
+    KnNotify(Config.Text.Title, Config.Text.Equipped:format(tonumber(amount) or Config.ArmorAmount), 'success')
 end)
 
 -- Main logic using lib.onCache for vehicle seat changes

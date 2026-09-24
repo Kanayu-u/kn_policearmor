@@ -69,7 +69,7 @@ RegisterNetEvent('kn_policearmor:attemptArmor', function()
         SetPedArmour(ped, Config.ArmorAmount)
         
         -- Play Sound on Client
-        TriggerClientEvent('kn_policearmor:playSound', src)
+        TriggerClientEvent('kn_policearmor:playSound', src, Config.ArmorAmount)
     end
 end)
 
